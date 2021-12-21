@@ -1,0 +1,186 @@
+Hierarchy:
+
+	Main (w, +):
+	{
+		s: Rectangle (0, 0, 1600, 900, Fucsia)
+
+		t: "Application/Assets/Textures/Wall.bmp"
+	}
+
+		MenuPlace (w, +)
+		{
+			s: Rectangle (320, 143, 1600, 900, BlanchedAlmond)
+
+			t: "Application/Assets/Textures/AstonMartinDB5.bmp"
+		}
+
+		ShowMenu (f, +)
+		{
+			s: Rectangle (1050, 520, 1327, 692, BlanchedAlmond)
+
+			c: Rectangle (1160, 540, 1292, 630, Fucsia)
+			
+			t: "Application/Assets/Textures/MenuNotebook.bmp"
+		}
+
+		Menu (w, ?):
+		{
+			s: Rectangle (1000, 100, 1400, 500, Fucsia)
+
+			t: "Application/Assets/Textures/Background.bmp"
+		}
+
+			AddCanvas (f, +)
+			{
+				s: Rectangle (1080, 445, 1320, 490, BlanchedAlmond)
+
+				t: "Application/Assets/Textures/CanvasTitle.bmp"
+			}
+
+			CanvasPointer (f, -)
+			{
+				s: Rectangle (1040, 135, 1360, 185, Firebrick)
+
+				t: "Application/Assets/Textures/CanvasTitle.bmp"
+			}
+
+
+		TurnOffWindow (w, +)
+		{
+			s: Rectangle (0, 0, 1600, 900, Fucsia)
+
+			c: Rectangle (0, 0, 1, 1, Fucsia)
+		}
+
+		TurnOff (f, +)
+		{
+			s: Rectangle (1320, 610, 1395, 710, BlanchedAlmond)
+
+			t: "Application/Assets/Textures/TurnOff.bmp"
+		}
+
+
+		Palette (w, ?):
+		{
+			s: Rectangle (0, 300, 1000, 900, BlanchedAlmond)
+
+			c: Rectangle (0, 400, 550, 900, BlanchedAlmond)
+
+			t: "Application/Assets/Textures/OpenSpy.bmp"
+		}
+
+			ShowColourPicker (f, +)
+			{
+				s: Rectangle (125, 630, 175, 698)
+
+				t: "Application/Assets/Textures/MulticolouredTube.bmp"
+			}
+
+			PickBrush (f, +)
+			{
+				s: Circle (150, 755, 30, BlanchedAlmond)
+				
+				t: "Application/Assets/Textures/CircleBrush.bmp"
+			}
+
+			PickBrush (f, +)
+			{
+				s: Rectangle (200, 730, 250, 780, BlanchedAlmond)
+
+				t: "Application/Assets/Textures/SquareBrush.bmp"
+			}
+
+			PickSize (f, +)
+			{
+				s: Rectangle (120, 800, 390, 860, BlanchedAlmond)
+				
+				t: "Application/Assets/Textures/Frame.bmp"
+			}
+
+			SizePalette (w, +)
+			{
+				s: Rectangle (135, 815, 375, 845, BlanchedAlmond)
+
+				t: "Application/Assets/Textures/SizePalette.bmp"
+			}
+
+			Slider (f, +)
+			{
+				s: Rectangle (130, 810, 143, 850, BlanchedAlmond)
+			}
+
+		ShowPalette (f, +)
+		{
+			s: Rectangle (0, 300,  1000, 900, BlanchedAlmond)
+
+			c: Rectangle (0, 400, 250, 900, BlanchedAlmond)
+
+			t: "Application/Assets/Textures/Spy.bmp"
+		}
+
+		Container (w, ?):
+		{
+			s: Rectangle (390, 240, 970, 680, Black)
+		}
+
+			ColourPicker (w, +):
+			{
+				s: Rectangle (400, 250, 960, 670, Black)
+
+				t: "Application/Assets/Textures/Background.bmp"
+			}
+
+				PickColour (f, +)
+				{
+					s: Rectangle (410, 260, 810, 660, DarkGrey)
+				}
+
+				HuePalette (w, +):
+				{
+					s: Rectangle (860, 260, 900, 660, DarkGrey)
+
+					t: "Application/Assets/Textures/HuePalette.bmp"
+				}
+
+				Slider (f, +)
+				{
+					s: Rectangle (855, 652, 905, 668, DarkGrey)
+
+					t: "Application/Assets/Textures/Slider.bmp"
+				}
+
+		Container (w, -):
+		{
+			s: Rectangle (590, 240, 1010, 660, Fucsia)
+		}
+
+			Canvas (w, +):
+			{
+				s: Rectangle (600, 250, 1000, 650, Fucsia)			
+			}
+
+				Client 	  (f, +)
+				{
+					s: Rectangle (600, 300, 1000, 650, Fucsia)
+				}
+
+				Title 	  (w, +)
+				{
+					s: Rectangle (595, 245,  906, 300, Firebrick)
+
+					t: "Application/Assets/Textures/CanvasTitle.bmp"
+				}
+
+				HideCanvas  (f, +)
+				{
+					s: Rectangle (905, 246,  955, 300, BlueViolet)
+
+					t: "Application/Assets/Textures/CanvasHide.bmp"
+				}
+
+				CloseCanvas (f, +)
+				{
+					s: Rectangle (955, 246, 1005, 300, PaleVioletRed)
+
+					t: "Application/Assets/Textures/CanvasClose.bmp"
+				}
